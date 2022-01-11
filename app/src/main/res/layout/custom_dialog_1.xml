@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:contentPadding="16dp"
+        app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.LargeComponent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="?colorSecondary"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mtil_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Masukan Nama Anda"
+                android:textColorHint="?colorControlNormal"
+                app:boxStrokeColor="?color"
+                app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                app:errorEnabled="true"
+                app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.LargeComponent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:inputType="textPersonName"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mtil_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Nomor Hp. Anda"
+                android:textColorHint="?colorControlNormal"
+                app:boxStrokeColor="?color"
+                app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                app:errorEnabled="true"
+                app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.LargeComponent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_contact_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/m_btn_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="Register"
+                    android:textColor="?colorAccent"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                    android:background="transparent"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mb_tn_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="?colorAccent"
+                    android:text="Login"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                    android:textColor="?colorOnPrimary"
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
