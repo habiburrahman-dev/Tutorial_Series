@@ -19,6 +19,7 @@
             android:orientation="vertical">
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtv_title_custom_dialog_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Login"
@@ -26,13 +27,13 @@
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/mtil_name"
+                android:id="@+id/m_til_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:hint="Masukan Nama Anda"
-                android:textColorHint="?colorControlNormal"
-                app:boxStrokeColor="?color"
+                android:textColorHint="?colorPrimary"
+                app:boxStrokeColor="?colorSecondary"
                 app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 app:errorEnabled="true"
                 app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.LargeComponent"
@@ -48,12 +49,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/mtil_phone_number"
+                android:id="@+id/m_til_phone_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Masukan Nomor Hp. Anda"
-                android:textColorHint="?colorControlNormal"
-                app:boxStrokeColor="?color"
+                android:textColorHint="?colorPrimary"
+                app:boxStrokeColor="?colorSecondary"
                 app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 app:errorEnabled="true"
                 app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.LargeComponent"
@@ -74,7 +75,7 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/m_btn_back"
+                    android:id="@+id/m_btn_negative"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -82,20 +83,20 @@
                     android:text="Register"
                     android:textColor="?colorAccent"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                    android:background="transparent"
+                    android:background="@color/transparent"
                     app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/mb_tn_continue"
+                    android:id="@+id/m_btn_positive_custom_dialog_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_weight="1"
                     android:backgroundTint="?colorAccent"
-                    android:text="Login"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                     android:textColor="?colorOnPrimary"
-                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent" />
+                    app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                    tools:text="Login"/>
 
             </LinearLayout>
 
