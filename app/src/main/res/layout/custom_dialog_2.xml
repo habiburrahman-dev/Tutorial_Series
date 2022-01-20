@@ -24,7 +24,7 @@
             android:orientation="vertical">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/siv_icon_notification"
+                android:id="@+id/siv_icon_custom_dialog_2"
                 android:layout_width="62dp"
                 android:layout_height="62dp"
                 android:layout_gravity="center_horizontal"
@@ -33,7 +33,7 @@
                 tools:src="@tools:sample/avatars"/>
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/mtv_notification_title"
+                android:id="@+id/mtv_title_custom_dialog_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -42,15 +42,10 @@
                 android:textColor="?colorPrimary"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                app:layout_constraintTop_toBottomOf="@id/siv_icon_notification"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintVertical_bias="0"
                 tools:text="@tools:sample/full_names"/>
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/mtv_notification_desc"
+                android:id="@+id/mtv_body_custom_dialog_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxHeight="256dp"
@@ -61,11 +56,6 @@
                 android:textColor="?colorControlNormal"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-                app:layout_constraintTop_toBottomOf="@id/mtv_notification_title"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintVertical_bias="0"
                 tools:text="@tools:sample/lorem/random"/>
 
             <LinearLayout
@@ -75,7 +65,7 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/m_btn_negative_dialog"
+                    android:id="@+id/m_btn_negative"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -83,11 +73,11 @@
                     android:text="Tutup"
                     android:textColor="?colorAccent"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                    android:background="transparent"
+                    android:background="@color/transparent"
                     app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/m_btn_positive_dialog"
+                    android:id="@+id/m_btn_positive_custom_dialog_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"

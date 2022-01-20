@@ -30,6 +30,27 @@
             android:layout_gravity="center_horizontal"
             android:text="Launch"/>
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/m_btn_main_cd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Custom Dialog 1"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/m_btn_main_cd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Custom Dialog 2"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/m_btn_main_cd3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Custom Dialog 3"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
